@@ -1,0 +1,111 @@
+{
+  "id": "91dd906f-4905-403f-b54a-407915c632b8",
+  "version": "2.0",
+  "name": "My App",
+  "url": "https://www.selenium.dev",
+  "tests": [{
+    "id": "eb050c90-e77d-4121-a573-0d9a79ccbf24",
+    "name": "Test di navigazione",
+    "commands": [{
+      "id": "ee674abf-ae03-4820-acdf-6f69b9b9d0a3",
+      "comment": "",
+      "command": "open",
+      "target": "/selenium-ide/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31814115-f638-4ae7-a940-8166d1ff19da",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1008",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b14c61fb-5d71-4056-9339-2ec7d631e789",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Docs",
+      "targets": [
+        ["linkText=Docs", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Docs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/selenium-ide/docs/en/introduction/getting-started')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Docs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9343290d-e551-4034-a840-9a2b275eba91",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Suites",
+      "targets": [
+        ["linkText=Suites", "linkText"],
+        ["css=li:nth-child(5) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Suites')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '#suites')])[2]", "xpath:href"],
+        ["xpath=//li[5]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Suites')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "611879a5-9f93-48c2-b6d3-75ff54ac0528",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Help",
+      "targets": [
+        ["linkText=Help", "linkText"],
+        ["css=.nav-site > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Help')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/selenium-ide/help')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Help')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b55adb79-9ffb-4d4f-8f79-9c876adb0bb0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=get started",
+      "targets": [
+        ["linkText=get started", "linkText"],
+        ["css=.blockElement:nth-child(1) li:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'get started')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/selenium-ide/docs/en/introduction/getting-started')])[2]", "xpath:href"],
+        ["xpath=//li/p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'get started')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8291057-43c3-47ca-a1ac-6dcc76ec3670",
+      "comment": "",
+      "command": "click",
+      "target": "css=.docs-next > span:nth-child(1)",
+      "targets": [
+        ["css=.docs-next > span:nth-child(1)", "css:finder"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f297777-2b50-401d-8005-8faecc55d94d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.docMainWrapper",
+      "targets": [
+        ["css=.docMainWrapper", "css:finder"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "019e995c-a6e2-4447-b51f-877cb4ea4cbd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["eb050c90-e77d-4121-a573-0d9a79ccbf24"]
+  }],
+  "urls": ["https://www.selenium.dev/"],
+  "plugins": []
+}
